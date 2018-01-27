@@ -1,0 +1,15 @@
+Please input text to be ciphered
+<br>
+<br>
+<form action="/" method="get">
+  Text:<br>
+  <input type="text" name= "input_text"><br>
+  Shift: <br>
+  <input type="text" name= "shift" value = "13"><br>
+  <input type="submit">
+</form>
+<br>
+<% unless @output_text.empty? %>
+  Ciphered Text:
+  <p><%= @output_text %></p>
+<% end %>
